@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Time tracking dashboard</title>
+  
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+
+</head>
+<body>
+
+  <section class="dashboard">
+
+    <nav class="profile_container">
+      <article class="profile">
+        <img class="profile_img" src="images/image-jeremy.png" height="60px" width="60px">
+        <div class="profile_info">
+          <p>Report for</p>
+          <h3>Jeremy Robson</h3>
+        </div>
+      </article>
+      <ul class="timeframes">
+        <li onclick="switch_to_daily()" id="daily_button" class="time_option">Daily</li>
+        <li onclick="switch_to_weekly()" id="weekly_button" class="time_option">Weekly</li>
+        <li onclick="switch_to_monthly()" id="monthly_button" class="time_option">Monthly</li>
+      </ul>
+    </nav>
+
+    <article class="grid_container">
+
+      <article class="grid_item work">
+        <img class="grid_item_image" src="images/icon-work.svg" height="79px" width="79px">
+        <section class="info_section">
+          <article class="top_part">
+            <h3 class="grid_name">Work</h3>
+            <img class="more_options" src="images/icon-ellipsis.svg" height="10%" width="10%">
+          </article>
+          <article class="bottom_part">
+            <p class="current_hours"><span id="work_current_hours">-</span>hrs</p>
+            <p>Last <span class="timeframe">-</span> - <span id="work_previous_hours">-</span>hrs </p>
+          </article>
+        </section>
+      </article>
+
+      <article class="grid_item play">
+        <img class="grid_item_image" src="images/icon-play.svg" height="79px" width="79px">
+        <section class="info_section">
+          <article class="top_part">
+            <h3 class="grid_name">Play</h3>
+            <img class="more_options" src="images/icon-ellipsis.svg" height="10%" width="10%">
+          </article>
+          <article class="bottom_part">
+            <p class="current_hours"><span id="play_current_hours">-</span>hrs</p>
+            <p>Last <span class="timeframe">-</span> - <span id="play_previous_hours">-</span>hrs </p>
+          </article>
+        </section>
+      </article>
+
+      <article class="grid_item study">
+        <img class="grid_item_image" src="images/icon-study.svg" height="79px" width="79px">
+        <section class="info_section">
+          <article class="top_part">
+            <h3 class="grid_name">Study</h3>
+            <img class="more_options" src="images/icon-ellipsis.svg" height="10%" width="10%">
+          </article>
+          <article class="bottom_part">
+            <p class="current_hours"><span id="study_current_hours">-</span>hrs</p>
+            <p>Last <span class="timeframe">-</span> - <span id="study_previous_hours">-</span>hrs </p>
+          </article>
+        </section>
+      </article>
+
+      <article class="grid_item exercise">
+        <img class="grid_item_image" src="images/icon-exercise.svg" height="79px" width="79px">
+        <section class="info_section">
+          <article class="top_part">
+            <h3 class="grid_name">Exercise</h3>
+            <img class="more_options" src="images/icon-ellipsis.svg" height="10%" width="10%">
+          </article>
+          <article class="bottom_part">
+            <p class="current_hours"><span id="exercise_current_hours">-</span>hrs</p>
+            <p>Last <span class="timeframe">-</span> - <span id="exercise_previous_hours">-</span>hrs </p>
+          </article>
+        </section>
+      </article>
+
+      <article class="grid_item social">
+        <img class="grid_item_image" src="images/icon-social.svg" height="79px" width="79px">
+        <section class="info_section">
+          <article class="top_part">
+            <h3 class="grid_name">Social</h3>
+            <img class="more_options" src="images/icon-ellipsis.svg" height="10%" width="10%">
+          </article>
+          <article class="bottom_part">
+            <p class="current_hours"><span id="social_current_hours">-</span>hrs</p>
+            <p>Last <span class="timeframe">-</span> - <span id="social_previous_hours">-</span>hrs </p>
+          </article>
+        </section>
+      </article>
+
+      <article class="grid_item self_care">
+        <img class="grid_item_image" src="images/icon-self-care.svg" height="79px" width="79px">
+        <section class="info_section">
+          <article class="top_part">
+            <h3 class="grid_name">Self Care</h3>
+            <img class="more_options" src="images/icon-ellipsis.svg" height="10%" width="10%">
+          </article>
+          <article class="bottom_part">
+            <p class="current_hours"><span id="self_care_current_hours">-</span>hrs</p>
+            <p>Last <span class="timeframe">-</span> - <span id="self_care_previous_hours">-</span>hrs </p>
+          </article>
+        </section>
+      </article>
+
+    </article>
+
+  </section>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+</html>

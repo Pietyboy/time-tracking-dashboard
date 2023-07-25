@@ -1,0 +1,259 @@
+html{
+    background-color: #0f1424;
+    color: white;
+
+    font-family: 'Rubik', sans-serif;
+    font-size: 18px;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+.dashboard{
+    margin: 50px 10px;
+}
+
+.profile_container{
+    background-color: #1c1f4a;
+    border-radius: 15px;
+
+    margin-bottom: 20px;
+}
+
+.profile{
+    background-color: #5847eb;
+    border-radius: 15px;
+
+    height: 80%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+
+    padding: 25px;
+}
+
+.profile_img{
+    border: 3px solid white;
+    border-radius: 50%;
+
+    /* margin-right: 10px; */
+}
+
+.profile_info p{
+    color: #bdc1ff;
+    font-size: 13px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.profile_info h3{
+    font-weight: 300;
+    margin: 0;
+    margin-top: 3px;
+}
+
+.timeframes{
+    height: 20%;
+    list-style: none;
+    font-weight: 300;
+    color: #6f76c8;
+    
+    margin: 0;
+    padding: 15px 0;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.time_option:hover{
+    cursor: pointer;
+}
+
+.grid_container{
+    display: grid;
+}
+
+
+/* GRID ITEM START */
+.grid_item{
+    overflow: hidden;
+
+    border-radius: 15px;   
+    display: block; 
+    z-index: auto;
+
+    align-items: end;
+    margin-bottom: 30px;
+}
+
+
+.grid_item_image{
+    top: -10px;
+    position: relative;
+    z-index: 1;
+    left: 76%;
+}
+
+.info_section{
+    background-color: #1c1f4a;
+    border-radius: 13px;
+
+    margin-top: -47px;
+    padding: 20px;
+    padding-bottom: 30px;
+
+    position: relative;
+    z-index: 2;
+}
+
+.grid_name{
+    margin: 0;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.current_hours{
+    font-size: 30px;
+    color: white;
+}
+
+.top_part{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.bottom_part{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    color: #bdc1ff;
+    font-weight: 300;
+    font-size: 15px;
+
+    text-align: end;
+}
+
+.more_options{
+    margin-bottom: 5px;
+}
+
+.bottom_part p{
+    margin: 0;
+}
+/* GRID ITEM END */
+
+.work{
+    background-color: #ff8c66;
+}
+
+.play{
+    background-color: #56c2e6;
+}
+
+.study{
+    background-color: #ff5c7c;
+}
+
+.exercise{
+    background-color: #4acf81;
+}
+
+.social{
+    background-color: #7536d3;
+}
+
+.self_care{
+    background-color: #f1c65b;
+}
+
+@media (min-width: 700px) {
+
+    .dashboard{
+        margin: 100px auto;
+
+        display: flex;
+        justify-content: center;
+    }
+
+    .profile_container{
+        margin-right: 20px;
+        margin-bottom: 0;
+
+        max-width: 200px;
+    }
+
+    .profile{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+
+        padding: 30px;
+        height: 55%;
+    }
+
+    .profile_img{
+        margin-bottom: 30px;
+    }
+
+    .profile_info h3{
+        font-size: 35px;
+    }
+    
+    .timeframes{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        padding: 0 20px;
+        height: 30%;
+    }
+
+    .grid_container{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        gap: 20px;
+    }
+
+    .grid_item_image{
+        left: 50%;
+    }
+
+    .grid_item{
+        margin-bottom: 0;
+        max-width: 200px;
+    }
+
+    .info_section{
+        height: 100%;
+    }
+
+    .top_part{
+        margin-bottom: 10px;
+    }
+
+    .bottom_part{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .current_hours{
+        font-size: 55px;
+    }
+}
+
+@media (min-width: 840px) {
+    .profile_container{
+        width: 200px;
+    }
+
+    .grid_item{
+        width: 200px;
+    }
+}
